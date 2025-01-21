@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'ws-svc-nsgtest-dev-nonprod-nsgtest'
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: '$psversion'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
